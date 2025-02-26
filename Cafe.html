@@ -14,22 +14,37 @@
         .adaptativa-porcentaje-3 {
             width: 20%;
         }
+        
+        #resumen {
+            display: none;
+        }
+        
+        @media (min-width: 600px) {
+            #resumen {
+                display: block;
+            }
+            body {
+                font-size: 16px;
+                color: red;
+            }
+        }
+        
+        @media (min-width: 900px) {
+            body {
+                font-size: 14px;
+                color: black;
+            }
+        }
     </style>
 </head>
 <body>
     <article>
-        <h2>Primer Artículo</h2>
+        
         <img src="https://github.com/josemmcampos/Tarea-6/blob/main/contenido1%20(4).png?raw=true" alt="Imagen del primer artículo" class="adaptativa-porcentaje-1">
     </article>
     
-    <article>
-        <h2>Segundo Artículo</h2>
-        <img src="imagen2.jpg" alt="Imagen del segundo artículo" class="adaptativa-porcentaje-2">
-    </article>
-    
-    <article>
-        <h2>Tercer Artículo</h2>
-        <img src="imagen3.jpg" alt="Imagen del tercer artículo" class="adaptativa-porcentaje-3">
-    </article>
+    <div id="resumen">
+        <p>Este es el resumen del artículo.</p>
+    </div>
 </body>
 </html>
