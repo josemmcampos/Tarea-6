@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries Demo</title>
+    <style>
+        body {
+            font-size: 14px;
+            color: black;
+        }
+
+        #resumen {
+            display: none;
+        }
+
+        @media (min-width: 600px) {
+            #resumen {
+                display: block;
+            }
+            body {
+                font-size: 16px;
+                color: red;
+            }
+        }
+
+        @media (min-width: 900px) {
+            body {
+                font-size: 14px;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Media Queries</h1>
+    <p>Las media queries en CSS permiten aplicar estilos diferentes dependiendo del tamaño de la pantalla, la resolución o el tipo de dispositivo. Son esenciales para hacer un diseño responsive, adaptando la página a distintos dispositivos como móviles, tabletas y computadoras..</p>
+    <div id="resumen">Este es el resumen que se mostrará en pantallas más grandes.</div>
+</body>
+</html>
