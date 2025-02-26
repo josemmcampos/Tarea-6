@@ -3,41 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dientes Felices</title>
+    <title>Escuela Virtual Infantil</title>
     <style>
-        body {
-            font-size: 3vw;
-            font-family: Arial, sans-serif;
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .c1, .c2, .c3, .c4, .c5 {
+            width: 100%;
+            padding: 30px; /* Se aumentó el padding */
             text-align: center;
+            border: 1px solid #e8ebe9;
+            color: black; /* Texto en color negro */
+            font-size: 1.2em; /* Se aumentó el tamaño del texto */
         }
-        header {
-            background: linear-gradient(to right, navy, cyan);
-            color: black;
-            padding: 1vh 1vw;
-            border-radius: 1vh;
-            margin-bottom: 1vh;
+        .c1 { background-color: lightblue; }
+        .c2 { background-color: lightcoral; }
+        .c3 { background-color: lightgreen; }
+        .c4 { background-color: lightgoldenrodyellow; }
+        .c5 { background-color: lightpink; }
+
+        @media (min-width: 600px) {
+            .c2, .c3, .c4, .c5 {
+                width: 50%;
+            }
         }
-        footer {
-            margin-top: 1vw;
-            padding-top: 1vw;
-            border-top: 2px solid navy;
+
+        @media (min-width: 800px) {
+            .container {
+                width: 850px; /* Se amplió un poco más el contenedor */
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .c1 {
+                width: 100%;
+            }
+            .c2 {
+                width: 100%;
+            }
+            .c3, .c4, .c5 {
+                width: 33.33%;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>DientesFelices.com</h1>
-    </header>
-    <p>Bienvenido a mi sitio Web. Se ofrecen servicios de Ortodoncia / Odontología</p>
-    <p>Aquí podrás ver información de contacto y horarios.</p>
-    <h2>Realizamos los siguientes servicios:</h2>
-    <ul>
-        <li>Tratamiento de conductos</li>
-        <li>Implantes</li>
-    </ul>
-    <footer>
-        Derechos Reservados
-    </footer>
+    <div class="container">
+        <div class="c1">Escuela de niños creativos</div>
+        <div class="c2">En esta escuela tenemos el lema "Crea, Juega y Aprende"</div>
+        <div class="c3">Crea Actividades para niños de 3 a 6 años</div>
+        <div class="c4">Juega Diviértete en un ambiente sano y seguro.</div>
+        <div class="c5">Aprende Mientras juegas y creas aprendes cosas nuevas.</div>
+    </div>
 </body>
 </html>
 
